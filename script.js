@@ -1,51 +1,3 @@
-// const ctx = document.getElementById("myChart");
-// Chart.defaults.font.size = 16;
-// let myData = {
-//   labels: ["January", "February", "March", "April", "May"],
-//   datasets: [
-//     {
-//       label: "Monthly Sales(in lacs)",
-//       data: [70, 75, 65, 80, 104],
-//       borderWidth: 1,
-//       borderColor: "rgb(255, 255, 255)",
-//       backgroundColor: "#5ad2ef",
-//       barPercentage: 2,
-//       barThickness: 80,
-//       maxBarThickness: 80,
-//       minBarLength: 10,
-//     },
-//   ],
-// };
-// new Chart(ctx, {
-//   type: "bar",
-//   data: myData,
-//   options: {
-//     scales: {
-//       y: {
-//         suggestedMin: 0,
-//         suggestedMax: 30,
-//         beginAtZero: true,
-//       },
-//       x: {
-//         grid: {
-//           offset: true,
-//         },
-//       },
-//       responsive: true,
-//     //   plugins: {
-//     //     title: {
-//     //       display: true,
-//     //       text: "Monthly Sales Data",
-//     //     },
-//     //   },
-//     },
-//   },
-// });
-
-// import { Colors } from "chart.js";
-
-// Chart.register(Colors);
-
 let sales = [
   { month: "Jan", sale: 60 },
   { month: "Feb", sale: 70 },
@@ -83,6 +35,18 @@ let config = {
         grid: {
           display: false,
         },
+        title: {
+          display: true,
+          text: 'Month',
+          color: "#ffce56",
+          font: {
+            family: 'Comic Sans MS',
+            size: 20,
+            weight: 'bold',
+            lineHeight: 1.2,
+          },
+          padding: {top: 20, left: 0, right: 0, bottom: 0}
+        }
       },
       y: {
         beginAtZero: false,
@@ -91,6 +55,18 @@ let config = {
         grid: {
             display: false,
         },
+        title: {
+          display: true,
+          text: 'Sale',
+          color: "#ffce56",
+          font: {
+            family: 'Comic Sans MS',
+            size: 20,
+            weight: 'bold',
+            lineHeight: 1.2,
+          },
+          padding: {top: 20, left: 0, right: 0, bottom: 0}
+        }
       },
     },
     layout: {
